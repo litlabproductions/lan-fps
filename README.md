@@ -2,7 +2,11 @@
   
 #### 3D First person shooter with online multiplayer 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;a [***Lit Lab Production***](https://www.litlabproductions.com)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Built with [Unity3D](https://github.com/Unity-Technologies) <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Built with [Unity3D](https://github.com/Unity-Technologies) <br>
+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;**Note:** This application was developed with the help of a Brackey's tutorial found here: <br>
+&nbsp;&nbsp;&nbsp;&nbsp; https://www.youtube.com/watch?v=UK57qdq_lak  <br>
+
 ***
 
 ## Table of contents
