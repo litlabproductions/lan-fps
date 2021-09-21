@@ -9,7 +9,7 @@
 - [LAN FPS](#lan-fps)
   - [Development](#development)
     - [Player Movement](#player-movement)
-    - [Bullet Collision](#bullet-collision)
+    - [Shooting](#shooting)
 
 ***
 
@@ -23,65 +23,25 @@
 
   * **Shift** to use the jetpack <br><br>
 ![jet](https://user-images.githubusercontent.com/34845402/134240408-93de09e6-546f-40f4-9aba-cfd23483f23f.gif)
+      * *The jetpack fuel bar can be found on the bottom-left side of the screen*
 <br><br><br>
 
 ### Shooting 
-  * **Left Trigger** to fire <br><br>
-  * When a fire input is received an explosion particle effect will play near the of the gun barrel <br><br>
+  * **Left Trigger** to fire <br>
+  * When a fire input is received an explosion particle effect will play near the end of the gun barrel <br><br>
 
   * **Bullet Collision** 
       * Bullets travel via 3D raycast <br><br>
 ![1](https://user-images.githubusercontent.com/34845402/134242779-54b4e7cf-5cb8-4aa3-b9fd-a0cc5102427c.gif)
-      * *If the receiving game object containts a **dirt** layer it will cause a particle effect to play at an angle perpendicular to the corresponding game objects surface (As seen above)* <br><br>
-<br><br>
+      * *If the receiving environment game object containts a **dirt** layer it will cause a particle effect to play at an angle perpendicular to the corresponding game objects surface (As seen above)* <br><br>
 
-***
-<br>
-
-## Development
-
-### Randomized Environment 
-   * For each screen space, two random obstacle prefabs are spawned just ahead of the top of the screen. Because of this, no two games will ever be identical <br><br>
-![random-env](https://user-images.githubusercontent.com/34845402/132150061-a1c6b8e2-1960-420d-baf1-f6e57a5d6166.png)<br><br><br>
-
-
-### Movement and Collision 
-   * The players particle is fine-tuned for proper feel <br><br>
-![maze-proto01](https://user-images.githubusercontent.com/34845402/131583225-f4b54127-b7d3-4956-b6b0-6c276a81a5e4.gif) &nbsp;&nbsp;
-![move](https://user-images.githubusercontent.com/34845402/132148820-e8f4f6de-0539-47b7-83ed-8ebe6bb580c9.png)<br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# LAN FPS
-
-### 3D First person shooter with online multiplayer 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;a [***Lit Lab Production***](https://www.litlabproductions.com)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Built with [Unity3D](https://github.com/Unity-Technologies) and the 
-[Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/index.html)
-
-<br>
-
-***
-
-
-##### Find constant updates here: https://www.instagram.com/litlabproductions/
-
+  * **Player Health & Respawn** 
+      * When a player object is hit by a bullet raycast its health will be reduced
+      * If player health falls below **one** they will die, causing the body to disappear, a death animation to play and finally the player to respawn with full health at one of four locations a few seconds later <br><br>
+![ezgif com-gif-maker2](https://user-images.githubusercontent.com/34845402/134246613-fa63353c-a9d3-43cd-9de3-e0ba19185de8.gif)
+![ezgif com-gif-maker3](https://user-images.githubusercontent.com/34845402/134246621-cb12eb2c-717f-423e-bd97-7af440632061.gif)
+![ezgif com-gif-maker4](https://user-images.githubusercontent.com/34845402/134246718-81fc0f99-29e6-4ad4-8947-3333807a2d34.gif)
+<br><br><br>
 
 ***
 
